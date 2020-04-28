@@ -1,0 +1,305 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" http-equiv="X-UA-Compatible" content="IE=Edge">
+  <link rel="shortcut icon" href="favicon.ico"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <title>Spring Staff Meeting 2020</title>
+  <link rel="stylesheet" href="events.css">
+  <link rel="stylesheet" href="vendorlibs/animate.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
+</head>
+
+<style>
+#iframe{
+  width:  100%;
+  height: 100%;
+  display:block;
+}
+p {
+  margin: 0 0 10px;
+}
+
+
+</style>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <main>
+    <div class="main-wrapper first">
+      <div class="bgi-wrapper">
+        <img src="assets/1_triangle-grid.svg" alt="Background Image"/>
+      </div>
+      <div class="content-wrapper animated fadeIn">
+
+
+
+        <div class="auth">
+
+          <div id="visitSite" class="contact__form">
+
+
+
+
+          </div>
+
+
+<div id="passw">
+      <div>
+        <center>
+        <label class="t-wesblue f-600 f-16" for="PIN">Enter your login to view the Westat Stockholder presentation.</label>
+      </center>
+
+      </div>
+      <center>
+      <div>
+
+        <input maxlength="12" size="8" class="auth-control access" placeholder="Type your Password here" type="password" id="password" onkeydown="if (event.keyCode == 13) document.getElementById('button').click()" />
+
+        <button value="Login" type="button" class="btn-login" id="button" type="button" value="Submit" onclick="if (document.getElementById('password').value == 'SpringSM2020') {
+          window.location.href='2020shareholders-video.html';   document.getElementById('passw').style.display='none'; }
+          else {  alert('Invalid Password!'); password.setSelectionRange(0, password.value.length);   } ">Submit</button>
+      </div>
+</center>
+
+      <!-- <div>
+        <br/>
+        <input id="button" type="button" value="Submit" onclick="if (document.getElementById('password').value == 'elizabeth') {
+          document.getElementById('visitSite').classList.toggle('show');   document.getElementById('passw').style.display='none'; }
+          else {  alert('Invalid Password!'); password.setSelectionRange(0, password.value.length);   } " />
+        </div> -->
+
+      </div>
+
+          <!-- <span class="loader">Loading...</span> -->
+          <div class="auth-wrapper animated zoomIn fast">
+            <label class="t-wesblue f-600 f-16" for="PIN">Enter your login to view the Westat Stockholder presentation.</label>
+            <div class="pin-wrapper">
+              <input name="PIN" type="text" maxlength="10" size="8" class="auth-control access" placeholder="Type your Password here" autofocus="autofocus" autocomplete="false" required>
+              <span class="login-message"></span>
+            </div>
+            <button value="Login" type="button" class="btn-login">Submit</button>
+
+          </div>
+          <div class="contact-wrapper">
+              <a data-toggle="modal" data-target="#myModal" class="f-500">Contact support for any technical issues</a>
+            <!-- <a href="mailto:StephanieWhitmarsh@westat.com" class="f-500">Contact support for any technical issues</a> -->
+          </div>
+
+
+
+          <!-- <div class="vertical">
+          <div class="end">
+          <button value="Logout" type="button" class="btn-logout animated zoomIn" tabindex="0" title="Ends current session">Logout</button>
+        </div>
+        <div class="stream-wrapper animated zoomIn">
+        <div class='stream-video'>
+
+        <iframe id="frame" src="https://video.ibm.com/embed/21318740" style="border: 0;" webkitallowfullscreen allowfullscreen frameborder="no" width="998" height="561"></iframe>
+      </div>
+      <div class="info-wrapper">
+      <div class="location f-16 f-500 t-wesblue">
+      <span class="t-wesblue f-600 f-18">Tuesday, February 25, 2020 5:00pm</span> (EST)
+    </div>
+    <a href="mailto:StephanieWhitmarsh@westat.com" class="f-500 btn-contact">Technical Support</a>
+  </div>
+</div>
+<div class="contact-wrapper">
+<a href="mailto:StephanieWhitmarsh@westat.com" class="f-500">Contact support for any technical issues</a>
+</div>
+</div> -->
+</div>
+</div>
+</div>
+
+
+ <div class="container">
+
+
+
+<div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">
+                          Contact Us
+                      </h4>
+                  </div>
+                  <div class="modal-body">
+                      <form role="form" type="post" id="reused_form" >
+                          <p> Send your message and we will get back to you as soon as possible. </p>
+                          <div class="form-group">
+                              <label for="name"> Name:</label>
+                              <input type="text" class="form-control" id="name" name="name" required maxlength="50" placeholder="Name">
+                          </div>
+                          <div class="form-group">
+                              <label for="email"> Email:</label>
+                              <input type="email" class="form-control" id="email" name="email" required maxlength="50" placeholder="Email">
+                          </div>
+                          <div class="form-group">
+                              <label for="name"> Message:</label>
+                              <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Your Message Here" maxlength="6000" rows="7"></textarea>
+                          </div>
+                          <button type="submit" class="btn btn-lg btn-default btn-block" id="btnContactUs">Send &rarr;</button>
+                      </form>
+                      <div id="success_message" style="width:100%; height:100%; display:none;overflow:none"> <p class="t-wesblue f-600 f-1">Sent your message successfully!</p> </div>
+                      <div id="error_message" style="width:100%; height:100%; display:none;overflow:none"> <p class="t-wesblue f-600 f-1">Error</p> Sorry there was an error sending your form. </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+</div>
+</main>
+
+
+
+<footer>
+  <div class="footer-wrapper">
+
+    <a href="https://www.westat.com" target="_blank" title="Visit website"><img src="assets/footer_westat_logo.svg" alt="Westat Home page" title="Westat" class="img-wes-logo"/></a> <p class="p-wes-title t-white">An Employee-Owned Research Corporation<sup class="t-white">&reg;</sup></p></div>
+  </footer>
+  <script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
+
+  <script
+src="https://code.jquery.com/jquery-3.4.1.slim.js"
+integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script> -->
+
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <script src="form.js"></script>
+  <!-- <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script> -->
+
+
+
+  <script>
+// $('#button').on('click', function() {
+//
+//
+//     if ($('#password').value == 'sh2020') {
+//        window.location.href="video.html";
+//     }
+//
+//     else {
+//        window.location.href="index.html";
+//     }
+//
+// })
+
+
+  // $(document).ready(function (){
+  //
+  //
+  //   var firebaseConfig= {
+  //     apiKey: "AIzaSyDU4Nd6-oDDcIwEvpSQImv34_SKw-eQ3x4",
+  //     authDomain: "eventsauth-20225.firebaseapp.com",
+  //     databaseURL: "https://eventsauth-20225.firebaseio.com",
+  //     projectId: "eventsauth-20225",
+  //     storageBucket: "eventsauth-20225.appspot.com",
+  //     messagingSenderId: "118778614855",
+  //     appId: "1:118778614855:web:c1f21a9514553654"
+  //   };
+  //
+  //   function init(e){
+  //
+  //     $(".btn-logout").hide(), e ? ($(".auth-wrapper").removeClass("visible"),
+  //
+  //     $(".loader").show(), setTimeout(function (){
+  //
+  //       $(".btn-logout").show(),
+  //
+  //       $(".auth").removeClass("auth").addClass("stream"),
+  //
+  //       $('.stream-video').css({height: $('.stream').width() * 0.5625}),
+  //
+  //       $(".stream-wrapper").addClass("visible"), $(".loader").hide()
+  //     }, 1e3),
+  //
+  //     $(".auth-control.access").val("")) : ($(".stream-wrapper").removeClass("visible"), $(".stream").removeClass("stream").addClass("auth"), $(".loader").show(), $('.stream-wrapper iframe').remove(),
+  //
+  //     setTimeout(function (){
+  //
+  //       $(".auth-wrapper").addClass("visible"), $(".loader").hide()}, 1e3))
+  //
+  //     }
+  //
+  //     firebase.initializeApp(firebaseConfig), firebase.auth().onAuthStateChanged(function (e){
+  //
+  //
+  //       $(".login-message").text(""), init(!!e)
+  //
+  //     }),
+  //
+  //     $(".btn-login").click(function (e){
+  //
+  //
+  //       // $('.stream-wrapper').css('visibility', 'visible');
+  //       //   $('.stream-wrapper').css('opacity', '1')
+  //       //     $('.stream-wrapper').css('visibility', 'visible')
+  //
+  //       if ($(".auth-control.access").val() || document.querySelector(".auth-control.access").innerHTML)  {
+  //         window.location.href="video.html";
+  //       }
+  //
+  //       var t = $(".auth-control.access").val() || document.querySelector(".auth-control.access").innerHTML || e.stopPropagation(); t ? firebase.auth().signInWithEmailAndPassword("thisisadummyemail@westat.com", t.toLowerCase()).catch(function (e) {
+  //
+  //
+  //
+  //         e.code, e.message, $(".login-message").text("Incorrect Password, please try again.")
+  //
+  //       }) : $(".login-message").text("* Password required")
+  //
+  //
+  //     }
+  //
+  //     ),
+  //
+  //     $(".btn-logout").click(function () {
+  //
+  //       firebase.auth().signOut().then(function (){
+  //
+  //       }).catch(function (e){
+  //
+  //       })
+  //
+  //     });
+  //
+  //     $(window).resize(function (){
+  //
+  //       $('.stream-video, .stream-video iframe').css({height: $('.stream').width() * 0.5625 })
+  //
+  //     });
+  //
+  //
+  //
+  //
+  //     $('input.auth-control.access').on('keyup', function(e){if(e.keyCode===13){
+  //       $('.btn-login').click();
+  //     }
+  //
+  //     else {
+  //       e.stopPropagation();
+  //     }
+  //
+  //   })})
+
+    </script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138691227-6"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-138691227-6');
+    </script>
+  </body>
+  </html>
