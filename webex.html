@@ -240,7 +240,7 @@ a.whiteSmaller:hover {
   font-size:40px;
 }
 .btn-contact{
-  font-size: 24px !important;
+  font-size: 23px !important;
   padding: .6em 1.2em .6em 1.2em !important;
 }
 .white {
@@ -292,10 +292,55 @@ a.whiteSmaller:hover {
     width: 100%;
     height: inherit;
     min-height: inherit;
-    background-image: url(images/background.png);
+    background-image: url(images/mobile.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: -480px 100%;
+    background-position: -30px 100%;
+}
+
+
+
+}
+
+
+@media (max-width:375px) and (max-height:812px){
+  .whiteTitle {
+    font-size:36px;
+  }
+  .btn-contact{
+    font-size: 21px !important;
+    padding: .6em 1.2em .6em 1.2em !important;
+  }
+
+
+
+
+}
+
+@media (max-width:375px) and (max-height:667px){
+  .whiteTitle {
+    font-size: 36px;
+}
+
+.hero-img-container {
+    /* height: 100vh; */
+    position: relative;
+    /* min-height: 44rem; */
+    /* max-height: 78rem; */
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: none;
+}
+
+.btn-contact {
+    font-size: 18px !important;
+
+  }
+  main {
+    min-height: calc(100vh - 100px);
+    position: relative;
 }
 
 }
