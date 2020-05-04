@@ -48,17 +48,17 @@ p {
 <div id="passw">
       <div>
         <center>
-        <label class="t-wesblue f-600 f-16" for="PIN">Enter your login to view the Westat Stockholder presentation.</label>
+        <label class="t-wesblue f-600 f-16" for="PIN">Enter password to view the Westat Stockholder presentation.</label>
       </center>
 
       </div>
       <center>
       <div>
 
-        <input maxlength="12" size="8" class="auth-control access" placeholder="Type your Password here" type="password" id="password" onkeydown="if (event.keyCode == 13) document.getElementById('button').click()" />
+        <input maxlength="12" size="8" class="auth-control access" placeholder="Type password here" type="password" id="password" onkeydown="if (event.keyCode == 13) document.getElementById('button').click()" />
 
         <button value="Login" type="button" class="btn-login" id="button" type="button" value="Submit" onclick="if (document.getElementById('password').value == 'SpringSM2020') {
-          window.location.href='2020shareholders-video.html';   document.getElementById('passw').style.display='none'; }
+          window.location.href='webex.html';   document.getElementById('passw').style.display='none'; }
           else {  alert('Invalid Password!'); password.setSelectionRange(0, password.value.length);   } ">Submit</button>
       </div>
 </center>
