@@ -37,6 +37,19 @@ html {
 
 }
 
+.bg {
+    position: absolute;
+    top: 10px;
+    left: 52%;
+    width: 48%;
+    height: 100vh;
+    background-image: url(images/new-background.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
 .mobile {
   display: none
 }
@@ -239,18 +252,25 @@ a.whiteSmaller:hover {
   margin-left:0px;
 }
 }
-
-/* @media (min-width:768px) and (max-width:991px) {
-  .background {
-    width: 100%;
-    height: inherit;
-    min-height: inherit;
-    background-image: url(images/background.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: -210px 100%;
+ @media (min-width:768px) and (max-width:991px) {
+   .bg {
+       position: absolute;
+       top: 48vh;
+       left: 4%;
+       width: 96%;
+       height: 52vh;
+       background-image: url(images/new-background.svg);
+       background-position: 0 0;
+       background-repeat: no-repeat;
+       background-size: cover;
+   }
+   .horizontal {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: none;
 }
-} */
+}
 
 @media (max-width:767px) {
 .mobile {
@@ -332,7 +352,17 @@ a.whiteSmaller:hover {
     background-position: 0px 100%;
 }
 
-
+.bg {
+    position: absolute;
+    top: 70vh;
+    left: 3.3%;
+    width: 96.7%;
+    height: 30vh;
+    background-image: url(images/new-background.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 }
 
@@ -361,11 +391,23 @@ a.whiteSmaller:hover {
     position: relative;
     /* min-height: 44rem; */
     /* max-height: 78rem; */
-    height: 100%;
+    height: 120vh;
     width: 100%;
     margin: 0;
     padding: 0;
     overflow: none;
+}
+
+.bg {
+    position: absolute;
+    top: 80vh;
+    left: 3.3%;
+    width: 96.7%;
+    height: 40vh;
+    background-image: url(images/new-background.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .btn-contact {
@@ -387,6 +429,7 @@ a.whiteSmaller:hover {
     <div class="container-fluid padding-0">
       <div class="hero-img-container">
         <div class="background">
+          <div class="bg"></div>
         <div class="row pt10 padding-0">
         <div class="col-lg-9 col-lg-offset-1 col-md-9 col-md-offset-1 col-sm-12 col-xs-12">
           <h1 class="navy mw530">2020<br>
