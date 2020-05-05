@@ -382,7 +382,7 @@ footer{
     justify-content: space-between;
     align-items: center;
     padding: 0px 6rem;
-    flex-wrap: wrap;
+
 }
 
 .img-wes-logo{
@@ -449,6 +449,11 @@ flex-direction: column;
 -ms-align-items: center;
 align-items: center; */
 
+}
+
+footer .t-white {
+
+    padding-top:12px;
 }
 
 .vertical2 {
@@ -522,6 +527,13 @@ a.btn-contact{
 }
 
 @media (max-width: 991px) and (min-width: 768px){
+
+
+  footer .t-white {
+      color: #ffffff !important;
+      font-size:14px;
+      padding-top:12px;
+  }
     .content-wrapper .stream{
         width: 100%;
         padding: 48px 12px 0px;
@@ -583,9 +595,18 @@ a.btn-contact {
     .auth-wrapper{
         padding: 36px 18px 18px;
     }
+    .img-wes-logo {
+    height: 27px;
+}
+
+footer .t-white {
+    color: #ffffff !important;
+    font-size:12px;
+    padding-top:12px;
+}
 
     .footer-wrapper{
-        padding: 0em 1em;
+        padding: 0em .2em;
         justify-content: space-around;
     }
 
@@ -616,4 +637,16 @@ a.btn-contact {
     body{
         min-width: 360px !important;
     }
+
+
+  .img-wes-logo {
+    height: 20px;
+}
+
+footer .t-white {
+    color: #ffffff !important;
+    font-size:10px;
+    padding-top:14px;
+}
+
 }

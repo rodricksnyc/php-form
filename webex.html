@@ -43,7 +43,20 @@ background: #161f75
   left: 52%;
   width: 48%;
   height: 100vh;
-  background-image: url(images/graphic.svg);
+  background-image: url(images/bg.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.bg2 {
+  position: absolute;
+  top: -10px;
+  left: 52%;
+  width: 48%;
+  height: 100vh;
+  background-image: url(images/bg2.svg);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -264,6 +277,17 @@ a.whiteSmaller:hover {
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .bg2 {
+    position: absolute;
+    top: 60vh;
+    left: 0%;
+    width: 100%;
+    height: 40vh;
+    background-image: url(images/bg2.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
   .horizontal {
     display: flex;
     justify-content: space-evenly;
@@ -279,6 +303,18 @@ a.whiteSmaller:hover {
   .desktop {
     display:none;
   }
+
+  .bg2 {
+    position: absolute;
+    top: 70vh;
+    left: 0%;
+    width: 100%;
+    height: 30vh;
+    background-image: url(images/bg2.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
   .phone {
@@ -346,7 +382,7 @@ a.whiteSmaller:hover {
     width: 100%;
     height: inherit;
     min-height: inherit;
-    background-image: url(images/background.svg);
+    background-image: url(images/mobile-background.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0px 100%;
@@ -410,6 +446,18 @@ a.whiteSmaller:hover {
     background-size: cover;
   }
 
+  .bg2 {
+    position: absolute;
+    top: 60vh;
+    left: 0%;
+    width: 100%;
+    height: 40vh;
+    background-image: url(images/bg2.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
   .btn-contact {
     font-size: 18px !important;
 
@@ -430,6 +478,7 @@ a.whiteSmaller:hover {
       <div class="hero-img-container">
         <div class="background">
           <div class="bg"></div>
+          <div class="bg2"></div>
           <div class="row pt10 padding-0">
             <div class="col-lg-9 col-lg-offset-1 col-md-9 col-md-offset-1 col-sm-12 col-xs-12">
               <h1 class="navy mw530">2020<br>
