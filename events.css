@@ -372,8 +372,9 @@ main{
 
 footer{
     position: relative;
-    background: #1a2a57;
+    /* background: #1a2a57; */
     padding: 12px 0px;
+    background: #161f75
 }
 
 .footer-wrapper{
