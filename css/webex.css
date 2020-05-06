@@ -510,6 +510,13 @@ a.whiteSmaller:hover {
   margin-left: 9.5%;
 }
 
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 43em !important;
+}
+
 .tab-content {
   padding-bottom:2em !important
 }
@@ -711,11 +718,25 @@ font-weight:400;
     position: relative;
     width: 100%;
     overflow: hidden;
-    min-height: 45em;
+    height:auto !important;
+    min-height: 47em;
   }
+
+  #meetingModal .modal-title {
+    right: 27px;
+
+}
 }
 
 @media (max-width:767px) {
+  #meetingModal .modal-title {
+    right: 27px;
+
+}
+  .carousel-inner {
+    min-height: 34em;
+    height: auto !important;
+}
   .carousel-inner {
     position: relative;
     width: 100%;
