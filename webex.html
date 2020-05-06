@@ -4,472 +4,19 @@
   <link rel="shortcut icon" href="favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
   <title>Spring Staff Meeting 2020</title>
-  <link rel="stylesheet" href="events.css">
+    <link rel="stylesheet" href="events.css">
+  <link rel="stylesheet" href="css/webex.css">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
   <link rel="stylesheet" href="fontawesome/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
 
 </head>
 
-<style>
-html {
-  overflow-x: hidden;
-}
-
-footer {
-background: #161f75
-}
-.background {
-
-  width: 100%;
-  height: inherit;
-  min-height: inherit;
-
-  background-image: url(images/background.svg);
-
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0px 100%;
-
-}
-
-.bg {
-  position: absolute;
-  top: 10px;
-  left: 52%;
-  width: 48%;
-  height: 100vh;
-  background-image: url(images/bg.svg);
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
-
-.bg2 {
-  position: absolute;
-  top: -10px;
-  left: 52%;
-  width: 48%;
-  height: 100vh;
-  background-image: url(images/bg2.svg);
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
-
-.mobile {
-  display: none
-}
-
-
-.hero-img-container {
-  height: 100vh;
-  position: relative;
-
-  min-height: 44rem;
-  /* max-height: 78rem; */
-}
-
-.navy {
-  color:#161f75;
-  font-size:40px;
-  font-weight:700;
-  line-height: 54px;
-  /* color: white; */
-}
-
-.yellow {
-  color:#dbf96d;
-  font-size:14px;
-  margin-bottom:5px;
-  margin-left:32px;
-}
-
-
-.padding-0 {
-  padding:0 !important;
-  margin:0 !important
-}
-.pt10 {
-  padding-top:10% !important;
-}
-
-.question:hover{
-  cursor:grab !important;
-}
-
-.person:hover{
-  cursor:grab !important;
-}
-.whiteTitle {
-  color:white;
-  font-size: 48px;
-  margin-top:1em;
-  font-weight:700
-}
-
-.mw530 {
-  max-width: 530px;
-}
-
-.btn-contact {
-  background-image: none;
-  background-repeat: no-repeat;
-
-  color: #161f75;
-  background-position: left center;
-  background-size: contain;
-  display: flex;
-  text-decoration: underline solid !important;
-  cursor: pointer;
-  transition: all 0.4s;
-
-  max-width: 395px;
-  margin: 0 !important;
-  font-size: 26px !important;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  padding: .4em 1em .4em 1em !important;
-  border-radius: 3rem !important;
-  position: relative;
-  font-weight:600 !important
-}
-
-.btn-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.5);
-  border-radius: 3rem;
-}
-
-.centered {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-
-  margin-top:2em;
-  margin-bottom:4em;
-
-}
-
-.white {
-  font-size:32px;
-  font-weight:100;
-  color:white
-}
-
-.whiteSmaller{
-  font-size:20px;
-  font-weight:100;
-  color:white
-}
-
-a.whiteSmaller {
-  font-weight:500
-}
-
-a.whiteSmaller:hover {
-  color:white;
-  text-decoration: underline !important;
-}
-
-.whiteImage {
-  color:white;
-  min-width:20px;
-}
-
-.mt3 {
-  margin-top:3em !important;
-}
-
-.across {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.horizontal {
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width:700px;
-}
-
-.flip {
-  background:white;
-  writing-mode: tb-rl;
-  width: 1px;
-  height: 34px;
-  margin-top: -5px;
-}
-.person:before {
-  font-family: "Font Awesome 5 Pro";
-  content: "\f82d";
-  font-size:20px;
-  padding-right:5px;
-
-}
-
-.strong {
-  font-weight:700 !important
-}
-
-
-.person {
-  border-bottom:1px solid white;
-}
-
-.question {
-  border-bottom:1px solid white;
-}
-
-.question:before {
-  font-family: "Font Awesome 5 Pro";
-  content: "\f059";
-  font-size:20px;
-  padding-right:5px;
-
-}
-
-@media (max-width:991px) {
-  body {
-    text-align: center;
-  }
-
-  .mw530 {
-    max-width: none;
-  }
-  .centered {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 1em;
-    margin-bottom: 2em;
-  }
-  .row{
-    padding:0em 1em !important;
-  }
-
-  .yellow {
-    margin-left:0px;
-  }
-}
-@media (min-width:768px) and (max-width:991px) {
-  .bg {
-    position: absolute;
-    top: 48vh;
-    left: 4%;
-    width: 96%;
-    height: 52vh;
-    background-image: url(images/new-background.svg);
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .bg2 {
-    position: absolute;
-    top: 60vh;
-    left: 0%;
-    width: 100%;
-    height: 40vh;
-    background-image: url(images/bg2.svg);
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-  .horizontal {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    max-width: none;
-  }
-}
-
-@media (max-width:767px) {
-  .mobile {
-    display: block;
-  }
-  .desktop {
-    display:none;
-  }
-
-  .bg2 {
-    position: absolute;
-    top: 70vh;
-    left: 0%;
-    width: 100%;
-    height: 30vh;
-    background-image: url(images/bg2.svg);
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-  .phone {
-    height: 45px;
-    margin: 0em .5em;
-
-  }
-  .navy {
-    font-size:23px;
-    line-height: 33px;
-  }
-  .whiteTitle {
-    font-size:40px;
-  }
-  .btn-contact{
-    font-size: 23px !important;
-    padding: .6em 1.2em .6em 1.2em !important;
-  }
-  .white {
-    font-size: 27px;
-    font-weight: 100;
-    color: white;
-  }
-  .whiteSmaller {
-    font-size: 18px;
-    font-weight: 100;
-    color: white;
-  }
-  .person {
-    border-bottom: none;
-    font-size: 0px;
-    padding:0px 20px
-  }
-  .question {
-    border-bottom: none;
-    font-size: 0px;
-    padding:0px 20px
-  }
-
-  .horizontal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 700px;
-  }
-  .question:before {
-    font-family: "Font Awesome 5 Pro";
-    content: "\f059";
-    font-size: 40px;
-    padding-right: 5px;
-  }
-  .person:before {
-    font-family: "Font Awesome 5 Pro";
-    content: "\f82d";
-    font-size: 40px;
-    padding-right: 5px;
-  }
-  .mt3 {
-    margin-top: 1em !important;
-  }
-  .pt10 {
-    padding-top:2em !important
-  }
-  .background {
-    width: 100%;
-    height: inherit;
-    min-height: inherit;
-    background-image: url(images/mobile-background.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 0px 100%;
-  }
-
-  .bg {
-    position: absolute;
-    top: 70vh;
-    left: 3.3%;
-    width: 96.7%;
-    height: 30vh;
-    background-image: url(images/new-background.svg);
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-}
-
-
-@media (max-width:375px) and (max-height:812px){
-  .whiteTitle {
-    font-size:36px;
-  }
-  .btn-contact{
-    font-size: 21px !important;
-    padding: .6em 1.2em .6em 1.2em !important;
-  }
-
-
-
-
-}
-
-@media (max-width:375px) and (max-height:667px){
-  .whiteTitle {
-    font-size: 36px;
-  }
-
-  .hero-img-container {
-    /* height: 100vh; */
-    position: relative;
-    /* min-height: 44rem; */
-    /* max-height: 78rem; */
-    height: 120vh;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: none;
-  }
-
-  .bg {
-    position: absolute;
-    top: 80vh;
-    left: 3.3%;
-    width: 96.7%;
-    height: 40vh;
-    background-image: url(images/new-background.svg);
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .bg2 {
-    position: absolute;
-    top: 60vh;
-    left: 0%;
-    width: 100%;
-    height: 40vh;
-    background-image: url(images/bg2.svg);
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-  .btn-contact {
-    font-size: 18px !important;
-
-  }
-  main {
-    min-height: calc(100vh - 100px);
-    position: relative;
-  }
-
-}
-
-</style>
 
 <body class="inactive">
   <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -520,7 +67,7 @@ a.whiteSmaller:hover {
 
                   <div class="flip"></div>
 
-                  <p class="whiteSmaller question">Attending a Webex Meeting from Home</p>
+                  <p class="whiteSmaller question" data-toggle="modal" data-target="#meetingModal">Attending a Webex Meeting from Home</p>
 
                 </div>
 
@@ -578,6 +125,108 @@ a.whiteSmaller:hover {
       </div>
 
 
+      <div id="meetingModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">
+
+              </h4>
+            </div>
+            <div class="modal-body">
+
+              <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <i class="fal fa-angle-left"></i>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+               <i class="fal fa-angle-right"></i>
+                <span class="sr-only">Next</span>
+              </a>
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+  <div class="tab-content clearfix">
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active" role="listbox">
+        <div class="row">
+          <img src="images/slider.png" class="img-responsive">
+          <h5>Start the Webex</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="row">
+          <img src="images/slider.png" class="img-responsive">
+          <h5>Start the Webex</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="row">
+          <img src="images/slider.png" class="img-responsive">
+          <h5>Start the Webex</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="row">
+          <img src="images/slider.png" class="img-responsive">
+          <h5>Start the Webex</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="row">
+          <img src="images/slider.png" class="img-responsive">
+          <h5>Start the Webex</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <ul class="nav nav-tabs alt-font text-uppercase letter-spacing-1 no-border font-weight-600 text-center" role="tablist">
+    <li id="tab1" data-target="#myCarousel" data-slide-to="0" class="active">
+      <a href="#tab1" role="tab" data-toggle="tab" class="xs-display-inline ">CONNECT</a>
+    </li>
+    <li id="tab2" data-target="#myCarousel" data-slide-to="1">
+      <a href="#tab2" role="tab" data-toggle="tab" class="xs-display-inline ">JOIN</a>
+    </li>
+    <li id="tab3" data-target="#myCarousel" data-slide-to="2">
+      <a href="#tab3" role="tab" data-toggle="tab" class="xs-display-inline ">AUDIO</a>
+    </li>
+    <li id="tab4" data-target="#myCarousel" data-slide-to="3">
+      <a href="#tab4" role="tab" data-toggle="tab" class="xs-display-inline ">VIEW</a>
+    </li>
+    <li id="tab5" data-target="#myCarousel" data-slide-to="4">
+      <a href="#tab5" role="tab" data-toggle="tab" class="xs-display-inline">TECH SUPPORT</a>
+    </li>
+  </ul>
+</div>
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
 
     </div>
 
@@ -610,6 +259,26 @@ a.whiteSmaller:hover {
 
 
     <script>
+    $('#myCarousel').carousel({
+  		interval:   0
+  	});
+
+  var $tabs = $('#myCarousel>.nav-tabs>li');
+  $('[data-slide="next"]').on('click', function() {
+    if ($tabs.filter('.active').next('li').length) {
+      $tabs.filter('.active').next('li').find('a[data-toggle="tab"]').tab('show');
+  } else {
+      $tabs.eq(0).find('a[data-toggle="tab"]').tab('show');
+    }
+  });
+  $('[data-slide="prev"]').on('click', function() {
+    if ($tabs.filter('.active').prev('li').length) {
+      $tabs.filter('.active').prev('li').find('a[data-toggle="tab"]').tab('show');
+    } else {
+      $tabs.eq($tabs.length - 1).find('a[data-toggle="tab"]').tab('show');
+    }
+  });
+
     // $('#button').on('click', function() {
     //
     //
