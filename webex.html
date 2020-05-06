@@ -4,10 +4,10 @@
   <link rel="shortcut icon" href="favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
   <title>Spring Staff Meeting 2020</title>
-    <link rel="stylesheet" href="events.css">
+  <link rel="stylesheet" href="events.css">
   <link rel="stylesheet" href="css/webex.css">
 
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
@@ -63,11 +63,11 @@
               <div class="col-lg-7 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-12 col-xs-12">
                 <div class="horizontal">
 
-                  <p class="whiteSmaller person" data-toggle="modal" data-target="#myModal">Technical Support</p>
+                  <a href="javascript:void(0)" data-toggle="modal" data-target="#myModal"><p class="whiteSmaller person">Technical Support</p></a>
 
                   <div class="flip"></div>
 
-                  <p class="whiteSmaller question" data-toggle="modal" data-target="#meetingModal">Attending a Webex Meeting from Home</p>
+                  <a href="javascript:void(0)" data-toggle="modal" data-target="#meetingModal"><p class="whiteSmaller question">Attending a Webex Meeting from Home</p></a>
 
                 </div>
 
@@ -75,329 +75,344 @@
                   <p class="whiteSmaller strong">First time using Webex?</p>
 
                   <div class="horizontal">
-                    <a href="https://apps.apple.com/us/app/cisco-webex-meetings/id298844386" target="_blank"><img class="img-responsive phone" src="images/iphone.png"></a>
-                    <a href="https://play.google.com/store/apps/details?id=com.cisco.webex.meetings&hl=en_US" target="_blank"><img class="img-responsive phone" src="images/android.png"></a>
+                    <a href="https://apps.apple.com/us/app/cisco-webex-meetings/id298844386" target="_blank">
+                      <img class="img-responsive phone" src="images/iphone.png"></a>
+                      <a href="https://play.google.com/store/apps/details?id=com.cisco.webex.meetings&hl=en_US" target="_blank"><img class="img-responsive phone" src="images/android.png"></a>
+                    </div>
+
                   </div>
 
                 </div>
+              </div>
 
+            </div>
+          </div>
+
+          <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+              <div class="modal-content">
+                <div class="modal-header">
+                  <a href="javascript:void(0)"<button type="button" class="close" data-dismiss="modal">&times;</button></a>
+                  <h4 class="modal-title">
+                    Contact Us
+                  </h4>
+                </div>
+                <div class="modal-body">
+                  <form role="form" type="post" id="reused_form" >
+                    <p> Send your message and we will get back to you as soon as possible. </p>
+                    <div class="form-group">
+                      <label for="name"> Name:</label>
+                      <input type="text" class="form-control" id="name" name="name" required maxlength="50" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                      <label for="email"> Email:</label>
+                      <input type="email" class="form-control" id="email" name="email" required maxlength="50" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                      <label for="name"> Message:</label>
+                      <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Your Message Here" maxlength="6000" rows="7"></textarea>
+                    </div>
+                    <!-- <center>
+                    <button type="submit" class="btn middle" data-dismiss="modal" id="btnContactUs">Send</button>
+                  </center> -->
+                  <button type="submit" class="btn btn-lg btn-default btn-block" id="btnContactUs">Send &rarr;</button>
+                </form>
+                <div id="success_message" style="width:100%; height:100%; display:none;overflow:none"> <p class="t-wesblue f-600 f-1">Sent your message successfully!</p> </div>
+                <div id="error_message" style="width:100%; height:100%; display:none;overflow:none"> <p class="t-wesblue f-600 f-1">Error</p> Sorry there was an error sending your form. </div>
               </div>
             </div>
-
           </div>
         </div>
 
-        <div id="myModal" class="modal fade" role="dialog">
+
+        <div id="meetingModal" class="modal fade" role="dialog">
           <div class="modal-dialog">
 
             <div class="modal-content">
               <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <a href="javascript:void(0)"<button type="button" class="close" data-dismiss="modal">&times;</button></a>
                 <h4 class="modal-title">
-                  Contact Us
+
                 </h4>
               </div>
               <div class="modal-body">
-                <form role="form" type="post" id="reused_form" >
-                  <p> Send your message and we will get back to you as soon as possible. </p>
-                  <div class="form-group">
-                    <label for="name"> Name:</label>
-                    <input type="text" class="form-control" id="name" name="name" required maxlength="50" placeholder="Name">
+
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <i class="fal fa-angle-left"></i>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <i class="fal fa-angle-right"></i>
+                  <span class="sr-only">Next</span>
+                </a>
+
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                  <div class="tab-content clearfix">
+                    <div class="carousel-inner" role="listbox">
+
+                      <div class="item active" role="listbox">
+                        <div class="row">
+                          <img src="images/slider.png" class="img-responsive">
+                          <h5>Start the Webex</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                        </div>
+                      </div>
+
+                      <div class="item">
+                        <div class="row">
+                          <img src="images/slider.png" class="img-responsive">
+                          <h5>Start the Webex</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                        </div>
+                      </div>
+
+                      <div class="item">
+                        <div class="row">
+                          <img src="images/slider.png" class="img-responsive">
+                          <h5>Start the Webex</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                        </div>
+                      </div>
+
+                      <div class="item">
+                        <div class="row">
+                          <img src="images/slider.png" class="img-responsive">
+                          <h5>Start the Webex</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                        </div>
+                      </div>
+
+                      <div class="item">
+                        <div class="row">
+                          <img src="images/slider.png" class="img-responsive">
+                          <h5>Start the Webex</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                      </div>
+
+
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <label for="email"> Email:</label>
-                    <input type="email" class="form-control" id="email" name="email" required maxlength="50" placeholder="Email">
-                  </div>
-                  <div class="form-group">
-                    <label for="name"> Message:</label>
-                    <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Your Message Here" maxlength="6000" rows="7"></textarea>
-                  </div>
-                  <!-- <center>
-                  <button type="submit" class="btn middle" data-dismiss="modal" id="btnContactUs">Send</button>
-                </center> -->
-                <button type="submit" class="btn btn-lg btn-default btn-block" id="btnContactUs">Send &rarr;</button>
-              </form>
-              <div id="success_message" style="width:100%; height:100%; display:none;overflow:none"> <p class="t-wesblue f-600 f-1">Sent your message successfully!</p> </div>
-              <div id="error_message" style="width:100%; height:100%; display:none;overflow:none"> <p class="t-wesblue f-600 f-1">Error</p> Sorry there was an error sending your form. </div>
+                  <ul class="nav nav-tabs alt-font text-uppercase letter-spacing-1 no-border font-weight-600 text-center" role="tablist">
+                    <li id="tab1" data-target="#myCarousel" data-slide-to="0" class="active">
+                      <a href="#tab1" role="tab" data-toggle="tab" class="xs-display-inline ">CONNECT</a>
+                    </li>
+                    <li id="tab2" data-target="#myCarousel" data-slide-to="1">
+                      <a href="#tab2" role="tab" data-toggle="tab" class="xs-display-inline ">JOIN</a>
+                    </li>
+                    <li id="tab3" data-target="#myCarousel" data-slide-to="2">
+                      <a href="#tab3" role="tab" data-toggle="tab" class="xs-display-inline ">AUDIO</a>
+                    </li>
+                    <li id="tab4" data-target="#myCarousel" data-slide-to="3">
+                      <a href="#tab4" role="tab" data-toggle="tab" class="xs-display-inline ">VIEW</a>
+                    </li>
+                    <li id="tab5" data-target="#myCarousel" data-slide-to="4">
+                      <a href="#tab5" role="tab" data-toggle="tab" class="xs-display-inline">TECH SUPPORT</a>
+                    </li>
+                  </ul>
+                </div>
+
+
+
+              </div>
             </div>
           </div>
         </div>
+
+
+
       </div>
 
-
-      <div id="meetingModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">
-
-              </h4>
-            </div>
-            <div class="modal-body">
-
-              <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <i class="fal fa-angle-left"></i>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-               <i class="fal fa-angle-right"></i>
-                <span class="sr-only">Next</span>
-              </a>
-
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-  <div class="tab-content clearfix">
-    <div class="carousel-inner" role="listbox">
-
-      <div class="item active" role="listbox">
-        <div class="row">
-          <img src="images/slider.png" class="img-responsive">
-          <h5>Start the Webex</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="row">
-          <img src="images/slider.png" class="img-responsive">
-          <h5>Start the Webex</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="row">
-          <img src="images/slider.png" class="img-responsive">
-          <h5>Start the Webex</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="row">
-          <img src="images/slider.png" class="img-responsive">
-          <h5>Start the Webex</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="row">
-          <img src="images/slider.png" class="img-responsive">
-          <h5>Start the Webex</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-      </div>
-
-
-    </div>
-  </div>
-  <ul class="nav nav-tabs alt-font text-uppercase letter-spacing-1 no-border font-weight-600 text-center" role="tablist">
-    <li id="tab1" data-target="#myCarousel" data-slide-to="0" class="active">
-      <a href="#tab1" role="tab" data-toggle="tab" class="xs-display-inline ">CONNECT</a>
-    </li>
-    <li id="tab2" data-target="#myCarousel" data-slide-to="1">
-      <a href="#tab2" role="tab" data-toggle="tab" class="xs-display-inline ">JOIN</a>
-    </li>
-    <li id="tab3" data-target="#myCarousel" data-slide-to="2">
-      <a href="#tab3" role="tab" data-toggle="tab" class="xs-display-inline ">AUDIO</a>
-    </li>
-    <li id="tab4" data-target="#myCarousel" data-slide-to="3">
-      <a href="#tab4" role="tab" data-toggle="tab" class="xs-display-inline ">VIEW</a>
-    </li>
-    <li id="tab5" data-target="#myCarousel" data-slide-to="4">
-      <a href="#tab5" role="tab" data-toggle="tab" class="xs-display-inline">TECH SUPPORT</a>
-    </li>
-  </ul>
-</div>
+    </main>
 
 
 
-            </div>
-          </div>
-        </div>
-      </div>
+    <footer>
+      <div class="footer-wrapper">
+
+        <a href="https://www.westat.com" target="_blank" title="Visit website"><img src="assets/footer_westat_logo.svg" alt="Westat Home page" title="Westat" class="img-wes-logo"/></a> <p class="p-wes-title t-white">An Employee-Owned Research Corporation<sup class="t-white">&reg;</sup></p></div>
+      </footer>
+      <script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
+
+      <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.js"
+      integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+      crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <!-- <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script> -->
+
+
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+      <script src="form.js"></script>
+      <!-- <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script> -->
 
 
 
-    </div>
+      <script>
+      $('#myCarousel').carousel({
+        interval:   0
+      });
 
-  </main>
+      var $tabs = $('#myCarousel>.nav-tabs>li');
+      $('[data-slide="next"]').on('click', function() {
+        if ($tabs.filter('.active').next('li').length) {
+          $tabs.filter('.active').next('li').find('a[data-toggle="tab"]').tab('show');
+        } else {
+          $tabs.eq(0).find('a[data-toggle="tab"]').tab('show');
+        }
+      });
+      $('[data-slide="prev"]').on('click', function() {
+        if ($tabs.filter('.active').prev('li').length) {
+          $tabs.filter('.active').prev('li').find('a[data-toggle="tab"]').tab('show');
+        } else {
+          $tabs.eq($tabs.length - 1).find('a[data-toggle="tab"]').tab('show');
+        }
+      });
 
+      $("a").on("keyup", function (e) {
 
+        var code = (e.keyCode ? e.keyCode : e.which);
+        if (code == 9) {
+          $(this).css('outline', 'dashed 3px #ff9c00')
 
-  <footer>
-    <div class="footer-wrapper">
+        }
 
-      <a href="https://www.westat.com" target="_blank" title="Visit website"><img src="assets/footer_westat_logo.svg" alt="Westat Home page" title="Westat" class="img-wes-logo"/></a> <p class="p-wes-title t-white">An Employee-Owned Research Corporation<sup class="t-white">&reg;</sup></p></div>
-    </footer>
-    <script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
-
-    <script
-    src="https://code.jquery.com/jquery-3.4.1.slim.js"
-    integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
-    crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script> -->
-
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-    <script src="form.js"></script>
-    <!-- <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script> -->
-
-
-
-    <script>
-    $('#myCarousel').carousel({
-  		interval:   0
-  	});
-
-  var $tabs = $('#myCarousel>.nav-tabs>li');
-  $('[data-slide="next"]').on('click', function() {
-    if ($tabs.filter('.active').next('li').length) {
-      $tabs.filter('.active').next('li').find('a[data-toggle="tab"]').tab('show');
-  } else {
-      $tabs.eq(0).find('a[data-toggle="tab"]').tab('show');
-    }
-  });
-  $('[data-slide="prev"]').on('click', function() {
-    if ($tabs.filter('.active').prev('li').length) {
-      $tabs.filter('.active').prev('li').find('a[data-toggle="tab"]').tab('show');
-    } else {
-      $tabs.eq($tabs.length - 1).find('a[data-toggle="tab"]').tab('show');
-    }
-  });
-
-    // $('#button').on('click', function() {
-    //
-    //
-    //     if ($('#password').value == 'sh2020') {
-    //        window.location.href="video.html";
-    //     }
-    //
-    //     else {
-    //        window.location.href="index.html";
-    //     }
-    //
-    // })
+      })
+      $("a").on('focusout', function() {
+        $(this).css('outline', 'none')
+      })
 
 
-    // $(document).ready(function (){
-    //
-    //
-    //   var firebaseConfig= {
-    //     apiKey: "AIzaSyDU4Nd6-oDDcIwEvpSQImv34_SKw-eQ3x4",
-    //     authDomain: "eventsauth-20225.firebaseapp.com",
-    //     databaseURL: "https://eventsauth-20225.firebaseio.com",
-    //     projectId: "eventsauth-20225",
-    //     storageBucket: "eventsauth-20225.appspot.com",
-    //     messagingSenderId: "118778614855",
-    //     appId: "1:118778614855:web:c1f21a9514553654"
-    //   };
-    //
-    //   function init(e){
-    //
-    //     $(".btn-logout").hide(), e ? ($(".auth-wrapper").removeClass("visible"),
-    //
-    //     $(".loader").show(), setTimeout(function (){
-    //
-    //       $(".btn-logout").show(),
-    //
-    //       $(".auth").removeClass("auth").addClass("stream"),
-    //
-    //       $('.stream-video').css({height: $('.stream').width() * 0.5625}),
-    //
-    //       $(".stream-wrapper").addClass("visible"), $(".loader").hide()
-    //     }, 1e3),
-    //
-    //     $(".auth-control.access").val("")) : ($(".stream-wrapper").removeClass("visible"), $(".stream").removeClass("stream").addClass("auth"), $(".loader").show(), $('.stream-wrapper iframe').remove(),
-    //
-    //     setTimeout(function (){
-    //
-    //       $(".auth-wrapper").addClass("visible"), $(".loader").hide()}, 1e3))
-    //
-    //     }
-    //
-    //     firebase.initializeApp(firebaseConfig), firebase.auth().onAuthStateChanged(function (e){
-    //
-    //
-    //       $(".login-message").text(""), init(!!e)
-    //
-    //     }),
-    //
-    //     $(".btn-login").click(function (e){
-    //
-    //
-    //       // $('.stream-wrapper').css('visibility', 'visible');
-    //       //   $('.stream-wrapper').css('opacity', '1')
-    //       //     $('.stream-wrapper').css('visibility', 'visible')
-    //
-    //       if ($(".auth-control.access").val() || document.querySelector(".auth-control.access").innerHTML)  {
-    //         window.location.href="video.html";
-    //       }
-    //
-    //       var t = $(".auth-control.access").val() || document.querySelector(".auth-control.access").innerHTML || e.stopPropagation(); t ? firebase.auth().signInWithEmailAndPassword("thisisadummyemail@westat.com", t.toLowerCase()).catch(function (e) {
-    //
-    //
-    //
-    //         e.code, e.message, $(".login-message").text("Incorrect Password, please try again.")
-    //
-    //       }) : $(".login-message").text("* Password required")
-    //
-    //
-    //     }
-    //
-    //     ),
-    //
-    //     $(".btn-logout").click(function () {
-    //
-    //       firebase.auth().signOut().then(function (){
-    //
-    //       }).catch(function (e){
-    //
-    //       })
-    //
-    //     });
-    //
-    //     $(window).resize(function (){
-    //
-    //       $('.stream-video, .stream-video iframe').css({height: $('.stream').width() * 0.5625 })
-    //
-    //     });
-    //
-    //
-    //
-    //
-    //     $('input.auth-control.access').on('keyup', function(e){if(e.keyCode===13){
-    //       $('.btn-login').click();
-    //     }
-    //
-    //     else {
-    //       e.stopPropagation();
-    //     }
-    //
-    //   })})
+      // $('#button').on('click', function() {
+      //
+      //
+      //     if ($('#password').value == 'sh2020') {
+      //        window.location.href="video.html";
+      //     }
+      //
+      //     else {
+      //        window.location.href="index.html";
+      //     }
+      //
+      // })
 
-    </script>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138691227-6"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      // $(document).ready(function (){
+      //
+      //
+      //   var firebaseConfig= {
+      //     apiKey: "AIzaSyDU4Nd6-oDDcIwEvpSQImv34_SKw-eQ3x4",
+      //     authDomain: "eventsauth-20225.firebaseapp.com",
+      //     databaseURL: "https://eventsauth-20225.firebaseio.com",
+      //     projectId: "eventsauth-20225",
+      //     storageBucket: "eventsauth-20225.appspot.com",
+      //     messagingSenderId: "118778614855",
+      //     appId: "1:118778614855:web:c1f21a9514553654"
+      //   };
+      //
+      //   function init(e){
+      //
+      //     $(".btn-logout").hide(), e ? ($(".auth-wrapper").removeClass("visible"),
+      //
+      //     $(".loader").show(), setTimeout(function (){
+      //
+      //       $(".btn-logout").show(),
+      //
+      //       $(".auth").removeClass("auth").addClass("stream"),
+      //
+      //       $('.stream-video').css({height: $('.stream').width() * 0.5625}),
+      //
+      //       $(".stream-wrapper").addClass("visible"), $(".loader").hide()
+      //     }, 1e3),
+      //
+      //     $(".auth-control.access").val("")) : ($(".stream-wrapper").removeClass("visible"), $(".stream").removeClass("stream").addClass("auth"), $(".loader").show(), $('.stream-wrapper iframe').remove(),
+      //
+      //     setTimeout(function (){
+      //
+      //       $(".auth-wrapper").addClass("visible"), $(".loader").hide()}, 1e3))
+      //
+      //     }
+      //
+      //     firebase.initializeApp(firebaseConfig), firebase.auth().onAuthStateChanged(function (e){
+      //
+      //
+      //       $(".login-message").text(""), init(!!e)
+      //
+      //     }),
+      //
+      //     $(".btn-login").click(function (e){
+      //
+      //
+      //       // $('.stream-wrapper').css('visibility', 'visible');
+      //       //   $('.stream-wrapper').css('opacity', '1')
+      //       //     $('.stream-wrapper').css('visibility', 'visible')
+      //
+      //       if ($(".auth-control.access").val() || document.querySelector(".auth-control.access").innerHTML)  {
+      //         window.location.href="video.html";
+      //       }
+      //
+      //       var t = $(".auth-control.access").val() || document.querySelector(".auth-control.access").innerHTML || e.stopPropagation(); t ? firebase.auth().signInWithEmailAndPassword("thisisadummyemail@westat.com", t.toLowerCase()).catch(function (e) {
+      //
+      //
+      //
+      //         e.code, e.message, $(".login-message").text("Incorrect Password, please try again.")
+      //
+      //       }) : $(".login-message").text("* Password required")
+      //
+      //
+      //     }
+      //
+      //     ),
+      //
+      //     $(".btn-logout").click(function () {
+      //
+      //       firebase.auth().signOut().then(function (){
+      //
+      //       }).catch(function (e){
+      //
+      //       })
+      //
+      //     });
+      //
+      //     $(window).resize(function (){
+      //
+      //       $('.stream-video, .stream-video iframe').css({height: $('.stream').width() * 0.5625 })
+      //
+      //     });
+      //
+      //
+      //
+      //
+      //     $('input.auth-control.access').on('keyup', function(e){if(e.keyCode===13){
+      //       $('.btn-login').click();
+      //     }
+      //
+      //     else {
+      //       e.stopPropagation();
+      //     }
+      //
+      //   })})
 
-    gtag('config', 'UA-138691227-6');
-    </script>
-  </body>
-  </html>
+      </script>
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138691227-6"></script>
+      <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-138691227-6');
+      </script>
+    </body>
+    </html>
