@@ -243,6 +243,10 @@ a.whiteSmaller:hover {
   .yellow {
     font-size:26px;
   }
+
+  .mw530 {
+    max-width: 630px;
+}
   .btn-contact {
     background-image: none;
     background-repeat: no-repeat;
