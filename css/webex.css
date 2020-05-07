@@ -235,6 +235,47 @@ a.whiteSmaller:hover {
 
 }
 
+@media (min-width:2000px) {
+  .whiteTitle, .navy {
+    font-size:60px;
+    line-height: 80px;
+  }
+  .yellow {
+    font-size:26px;
+  }
+  .btn-contact {
+    background-image: none;
+    background-repeat: no-repeat;
+    color: #151A77;
+    background-position: left center;
+    background-size: contain;
+    display: flex;
+    text-decoration: underline solid !important;
+    cursor: pointer;
+    transition: all 0.4s;
+    max-width: none;
+    margin: 0 !important;
+    font-size: 35px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .4em 1em .4em 1em !important;
+    border-radius: 3rem !important;
+    position: relative;
+    font-weight: 600 !important;
+    min-width: 633px;
+}
+.hero-img-container, .background {
+  height:120vh
+}
+.whiteSmaller {
+  font-size:27px;
+}
+.horizontal {
+  max-width:900px;
+}
+}
+
 
 @media (max-width:991px) {
   body {
