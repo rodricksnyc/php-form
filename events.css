@@ -195,6 +195,9 @@ a {
 main{
     min-height: calc(100vh - 60px);
     position: relative;
+    /* margin-bottom: -60px;
+height: 100%; */
+
 }
 
 .main-wrapper{
@@ -374,7 +377,8 @@ footer{
     position: relative;
     /* background: #1a2a57; */
     padding: 12px 0px;
-    background: #151A77
+    background: #151A77;
+    height:60px;
 }
 
 .footer-wrapper{
