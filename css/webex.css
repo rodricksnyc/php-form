@@ -252,6 +252,12 @@ a.whiteSmaller:hover {
 
 }
 
+@media screen and (min-height:1000px){
+  #meetingModal  {
+    top:15%;
+  }
+}
+
 @media (min-width:2000px) {
   .whiteTitle, .navy {
     font-size:60px;
