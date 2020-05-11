@@ -48,7 +48,7 @@ footer {
 
 .bg2 {
   position: absolute;
-  top: 0;
+  top: -1vh;
 
   background-image: url(../images/bg2.svg);
   background-position: 0 0;
