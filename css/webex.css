@@ -254,9 +254,17 @@ a.whiteSmaller:hover {
 
 @media screen and (min-height:1000px){
   #meetingModal  {
-    top:15%;
+    top:11%;
   }
 }
+
+@media screen and (max-height:999px){
+  #meetingModal  {
+    top:4%;
+  }
+}
+
+
 
 @media (min-width:2000px) {
   .whiteTitle, .navy {
