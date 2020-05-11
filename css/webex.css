@@ -5,20 +5,20 @@ html {
 footer {
   background: #151A77;
 
-    position: absolute;
+  position: absolute;
 
-    padding: 12px 0px;
-    background: #151A77;
-    height: 60px;
-    bottom: 0;
-    width: 100%;
+  padding: 12px 0px;
+  background: #151A77;
+  height: 60px;
+  bottom: 0;
+  width: 100%;
 
 }
 .background {
 
   width: 100%;
   /* height: 100%; */
-    min-height: calc(100vh - 60px);
+  min-height: calc(100vh - 58px);
   background-image: url(../images/color.png);
 
   background-size: cover;
@@ -29,34 +29,34 @@ footer {
 
 .bg {
 
-      position: absolute;
-      /* top: 10px; */
-      /* left: 52%; */
-      /* width: 48%; */
-      /* height: 100vh; */
-      background-image: url(../images/bg.svg);
-      background-position: right;
-      background-repeat: no-repeat;
-      /* background-size: cover; */
-      width: 700px;
-      height: 700px;
-      right: 5%;
-      top: 10%;
+  position: absolute;
+  /* top: 10px; */
+  /* left: 52%; */
+  /* width: 48%; */
+  /* height: 100vh; */
+  background-image: url(../images/bg.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  width: 700px;
+  height: 80vh;
+  right: 5%;
+  top: 10%;
 
 
 }
 
 .bg2 {
-      position: absolute;
-      top: 0;
+  position: absolute;
+  top: 0;
 
-      background-image: url(../images/bg2.svg);
-      background-position: 0 0;
-      background-repeat: no-repeat;
+  background-image: url(../images/bg2.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
 
-      height: 900px;
-      width: 1000px;
-      right: 0;
+  height: 100vh;
+  width: 1000px;
+  right: 0;
 }
 
 .mobile {
@@ -141,14 +141,14 @@ footer {
 }
 
 a.btn-contact{
-    padding: 8px 12px 8px 36px;
-    background-position: 12px 50%;
-    background-size: 18px;
-    text-decoration: none !important;
-    border-radius: 24px;
-    margin: -5px -1px 8px 0px;
-    opacity:.4;
-    pointer-events: none !important;
+  padding: 8px 12px 8px 36px;
+  background-position: 12px 50%;
+  background-size: 18px;
+  text-decoration: none !important;
+  border-radius: 24px;
+  margin: -5px -1px 8px 0px;
+  opacity:.4;
+  pointer-events: none !important;
 }
 
 
@@ -263,7 +263,7 @@ a.whiteSmaller:hover {
 
   .mw530 {
     max-width: 630px;
-}
+  }
   .btn-contact {
     background-image: none;
     background-repeat: no-repeat;
@@ -285,16 +285,16 @@ a.whiteSmaller:hover {
     position: relative;
     font-weight: 600 !important;
     min-width: 633px;
-}
-.hero-img-container, .background {
-  height:120vh
-}
-.whiteSmaller {
-  font-size:26px;
-}
-.horizontal {
-  max-width:900px;
-}
+  }
+  .hero-img-container, .background {
+    height:120vh
+  }
+  .whiteSmaller {
+    font-size:26px;
+  }
+  .horizontal {
+    max-width:900px;
+  }
 }
 
 
@@ -526,7 +526,7 @@ a.whiteSmaller:hover {
 }
 
 @media (min-width: 768px) {
-#meetingModal  .modal-dialog {
+  #meetingModal  .modal-dialog {
     width: auto !important;
     margin: 30px auto;
     max-width: 900px !important
@@ -579,27 +579,27 @@ a.whiteSmaller:hover {
   line-height: 26px
 }
 .item h5 {
-    color: #16487D;
-    font-size: 22px;
-    max-width: 80%;
-    margin-left: 9.5%;
-    font-weight: 600;
-    margin-top:1em;
+  color: #16487D;
+  font-size: 22px;
+  max-width: 80%;
+  margin-left: 9.5%;
+  font-weight: 600;
+  margin-top:1em;
 }
 
 .carousel-inner {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    height: 45em !important;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 45em !important;
 }
 
 /* .carousel-control .glyphicon-chevron-right {
-  top:49% !important;
+top:49% !important;
 }
 
 .carousel-control .glyphicon-chevron-left {
-  top:49% !important;
+top:49% !important;
 } */
 
 .tab-content {
@@ -637,7 +637,7 @@ a.whiteSmaller:hover {
 
 #meetingModal .modal-title i{
   color:#4295ac;
-font-weight:400;
+  font-weight:400;
 }
 
 .nav-tabs>li {
@@ -774,7 +774,7 @@ font-weight:400;
   transform: scaleY(1.1);
   margin-top: -1px;
   box-shadow: 0px 0px 11px -2px rgba(25,73,123,0.51);
-    z-index: 9999999;
+  z-index: 9999999;
 }
 
 .nav-tabs>li>a {
@@ -818,18 +818,18 @@ font-weight:400;
   #meetingModal .modal-title {
     right: 27px;
 
-}
+  }
 }
 
 @media (max-width:767px) {
   #meetingModal .modal-title {
     right: 27px;
 
-}
+  }
   .carousel-inner {
     min-height: 34em;
     height: auto !important;
-}
+  }
   .carousel-inner {
     position: relative;
     width: 100%;
