@@ -600,12 +600,18 @@ a.whiteSmaller:hover {
 
 .item a {
 
-    color: #151A77;
-    font-weight: 100;
-    font-size: 16px;
-    line-height: 26px;
-    text-decoration: underline !important;
+  color: #151A77;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 26px;
+  text-decoration: underline !important;
 }
+.item a:hover {
+  text-shadow: 0 0 0.7px #16487D;
+  color: #16487D;
+  /* font-weight:600; */
+}
+
 .item h5 {
   color: #16487D;
   font-size: 22px;
@@ -819,9 +825,9 @@ top:49% !important;
   -moz-box-shadow:none;
   box-shadow:none;
   -webkit-transition: background-color .8s ease-out;
--moz-transition: background-color .8s ease-out;
--o-transition: background-color .8s ease-out;
-transition: background-color .8s ease-out;
+  -moz-transition: background-color .8s ease-out;
+  -o-transition: background-color .8s ease-out;
+  transition: background-color .8s ease-out;
   /* -webkit-box-shadow: inset 3px -2px 26px -7px rgba(25,73,123,0.2);
   -moz-box-shadow: inset 3px -2px 26px -7px rgba(25,73,123,0.2);
 
