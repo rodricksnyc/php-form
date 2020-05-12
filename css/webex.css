@@ -370,6 +370,10 @@ a.whiteSmaller:hover {
   .mobile {
     display: block;
   }
+
+  .hideMobile {
+    display: none;
+  }
   .desktop {
     display:none;
   }
@@ -592,6 +596,16 @@ a.whiteSmaller:hover {
   font-size:16px;
   line-height: 26px
 }
+
+
+.item a {
+
+    color: #151A77;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 26px;
+    text-decoration: underline !important;
+}
 .item h5 {
   color: #16487D;
   font-size: 22px;
@@ -645,8 +659,11 @@ top:49% !important;
   font-size:14px;
   position: absolute;
   right: 100px;
-  top: 20px;
+  top: 44px;
   font-weight:600;
+}
+.item h5 {
+  font-size:20px;
 }
 
 #meetingModal .modal-title i{
@@ -822,6 +839,13 @@ transition: background-color .8s ease-out;
   .tab-content {
     padding-bottom: 0em !important;
   }
+
+  .item p {
+    max-width: 100%;
+    margin-left: 0%;
+
+
+  }
 }
 
 @media (max-width:1024px) and (min-width:768px){
@@ -843,6 +867,10 @@ transition: background-color .8s ease-out;
   #meetingModal .modal-title {
     right: 27px;
 
+  }
+
+  .item p {
+    font-size:14px;
   }
   .carousel-inner {
     min-height: 34em;
