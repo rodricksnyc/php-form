@@ -336,6 +336,31 @@
         $(this).css('outline', 'none')
       })
 
+      $('.carousel').carousel({
+    interval: false,
+})
+
+
+
+function checkitem()                        // check function
+{
+    var $this = $('#myCarousel');
+    if ($('.carousel-inner .item:first').hasClass('active')) {
+        $('.carousel-control.left').hide();
+    } else if ($('.carousel-inner .item:last').hasClass('active')) {
+        $('.carousel-control.right').hide();
+    } else {
+        $('.carousel-control').show();
+
+    }
+}
+
+checkitem()
+
+$('#myCarousel').on('slid.bs.carousel', checkitem);
+
+
+
 
 
       // if ($(window).height() >= 1024){
