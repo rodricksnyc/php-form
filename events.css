@@ -560,6 +560,7 @@ a.btn-contact{
     font-size: 24px;color: #00467f !important;
   }
 
+
   .btn-logout {
     padding: .60em 2em;
     margin-bottom: 1em;
@@ -600,12 +601,12 @@ a.btn-contact{
     padding: 36px 18px 18px;
   }
   .img-wes-logo {
-    height: 27px;
+    height: 22px;
   }
 
   footer .t-white {
     color: #ffffff !important;
-    font-size:12px;
+    font-size:11px;
     padding-top:12px;
   }
 
