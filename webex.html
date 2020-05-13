@@ -359,7 +359,7 @@ function checkitem()
 
 checkitem()
 
-$('#myCarousel').on('slid.bs.carousel', checkitem);
+
 
 if($('.carousel-control.left').is(':hidden')) {
 
@@ -377,6 +377,8 @@ $('.nav-tabs li').first().click(function() {
 })
 
 }
+
+$('#myCarousel').on('slid.bs.carousel', checkitem);
 
 
       // if ($(window).height() >= 1024){
