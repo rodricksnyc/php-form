@@ -874,6 +874,9 @@ top:49% !important;
     right: 27px;
 
   }
+  .item a {
+    font-size: 15px;
+}
 
   .item p {
     font-size:14px;
