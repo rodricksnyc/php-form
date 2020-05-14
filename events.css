@@ -640,9 +640,6 @@ a.btn-contact{
 }
 
 @media (max-width: 360px){
-  body{
-    min-width: 360px !important;
-  }
 
 
   .img-wes-logo {
