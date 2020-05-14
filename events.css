@@ -638,18 +638,3 @@ a.btn-contact{
     padding-right: 2em;
   }
 }
-
-@media (max-width: 360px){
-
-
-  .img-wes-logo {
-    height: 20px;
-  }
-
-  footer .t-white {
-    color: #ffffff !important;
-    font-size:10px;
-    padding-top:14px;
-  }
-
-}
