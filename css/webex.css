@@ -90,7 +90,7 @@ footer {
 }
 
 .semiStrong {
-  font-weight:400 !important;
+  font-weight:500 !important;
 }
 
 .padding-0 {
@@ -879,6 +879,19 @@ top:49% !important;
 }
 
 @media (max-width:767px) {
+
+  #meetingModal {
+    top: 0% !important;
+}
+
+  .modal-content {
+
+      margin-top: -.4em !important;
+  }
+  .item p {
+    line-height: 20px !important;
+    font-weight: 400 !important;
+}
 
   .glyphicon-chevron-right:after {
       content: "\f111" !important;
