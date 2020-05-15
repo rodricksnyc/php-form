@@ -898,16 +898,18 @@ top:49% !important;
       font: 40px 'FontAwesome' !important;
       color: #00ADE4 !important;
       opacity: .55;
+      display:none;
   }
   .carousel-control.right {
     right: -10px !important;
 }
 .right .fal.fa-angle-right {
     position: absolute;
-    top: 1px;
+    top: 0;
     font-size: 37px;
-    right: 8px;
-    color: white;
+    right: 0;
+    color:#151A77;
+    /* color: white; */
     opacity: .85;
     z-index: 99;
 }
@@ -918,16 +920,18 @@ top:49% !important;
     font: 40px 'FontAwesome' !important;
     color: #00ADE4 !important;
     opacity: .55;
+    display:none;
 }
 .carousel-control.left {
   left: -10px !important;
 }
 .left .fal.fa-angle-left {
   position: absolute;
-  top: 1px;
+  top: 0;
   font-size: 37px;
-  left: 8px;
-  color: white;
+  left: 0;
+  color:#151A77;
+  /* color: white; */
   opacity: .85;
   z-index: 99;
 }
