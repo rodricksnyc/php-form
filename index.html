@@ -83,7 +83,7 @@ p {
 
           </div>
           <div class="contact-wrapper">
-              <a data-toggle="modal" data-target="#myModal" class="f-500">Contact support for any technical issues</a>
+              <a href="" data-toggle="modal" data-target="#myModal" tabindex="0" aria-hidden="false" aria-label="Show Contact Form" role="button">Contact support for any technical issues</a>
             <!-- <a href="mailto:StephanieWhitmarsh@westat.com" class="f-500">Contact support for any technical issues</a> -->
           </div>
 
@@ -115,8 +115,6 @@ p {
 
 
  <div class="container">
-
-
 
    <div id="myModal" class="modal fade" role="dialog">
      <div class="modal-dialog">
@@ -184,6 +182,35 @@ crossorigin="anonymous"></script>
 
 
   <script>
+
+
+  $("a").on("keyup", function (e) {
+
+    var code = (e.keyCode ? e.keyCode : e.which);
+    if (code == 9) {
+      $(this).css('outline', 'dashed 3px #ff9c00')
+
+    }
+
+  })
+  $("a").on('focusout', function() {
+    $(this).css('outline', 'none')
+  })
+
+
+
+  $("input").on("keyup", function (e) {
+
+    var code = (e.keyCode ? e.keyCode : e.which);
+    if (code == 9) {
+      $(this).css('outline', 'dashed 3px #ff9c00')
+
+    }
+
+  })
+  $("input").on('focusout', function() {
+    $(this).css('outline', 'none')
+  })
 // $('#button').on('click', function() {
 //
 //
