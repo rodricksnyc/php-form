@@ -258,6 +258,56 @@ main{
   display: none;
 }
 
+#myModal h4.navy {
+  color:#19497b;
+  font-size:35px;
+  font-weight:700;
+
+  letter-spacing: 0px !important;
+
+}
+
+#myModal .modal-header {
+    padding: 15px;
+    border-bottom: 1px solid #19497b;
+    margin-left: 2em;
+    margin-right: 2em;
+    padding-bottom: 0px;
+}
+#myModal .modal-header .close {
+    margin-top: -16px !important;
+    color:#19497b !important;
+    font-size: 38px !important;
+    opacity: 1 !important;
+    font-weight: 100 !important;
+    margin-right: -35px;
+}
+
+#myModal .modal-body {
+  padding: 1em 2em 0em 2em!important;
+  text-align: left;
+}
+
+#myModal .form-control {
+  border: 1px solid #19497b;
+}
+
+@media screen and (min-height:1000px){
+
+
+  #myModal  {
+    top:11%;
+  }
+}
+
+@media screen and (max-height:999px){
+
+
+  #myModal  {
+    top:4%;
+  }
+}
+
 /* .stream-wrapper{
 visibility: hidden;
 opacity: 0;
