@@ -197,6 +197,19 @@ crossorigin="anonymous"></script>
     $(this).css('outline', 'none')
   })
 
+  $("button").on("keyup", function (e) {
+
+    var code = (e.keyCode ? e.keyCode : e.which);
+    if (code == 9) {
+      $(this).css('outline', 'dashed 3px #ff9c00')
+
+    }
+
+  })
+  $("button").on('focusout', function() {
+    $(this).css('outline', 'none')
+  })
+
 
 
   $("input").on("keyup", function (e) {
