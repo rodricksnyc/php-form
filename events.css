@@ -434,6 +434,7 @@ footer{
 @media (min-height:769px) {
   footer {
     position:absolute;
+    width:100%;
   }
 }
 
