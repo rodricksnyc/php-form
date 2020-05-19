@@ -1019,6 +1019,8 @@ top:49% !important;
 
 
 @media (width:1024px) and (height:1366px) {
+
+
   .bg {
     position: absolute;
     top: 48vh;
@@ -1395,7 +1397,7 @@ footer {
 
 
 
-@media (min-width:992px) and (max-width:1500px) {
+@media (min-width:1025px) and (max-width:1500px) {
   .middleSize {
     display:none;
   }
@@ -1404,7 +1406,7 @@ footer {
   }
 }
 
-@media (max-width:991px) {
+@media (max-width:1024px) {
   .hideMiddleSize{
     display:none;
   }
