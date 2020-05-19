@@ -446,17 +446,16 @@ a.whiteSmaller:hover {
   }
 
   .bg2 {
-    position: absolute;
-    top: 70vh;
-    left: 0%;
-    width: 100%;
-    height: 30vh;
-    background-image: url(../images/bg2.svg);
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: cover;
+      position: absolute;
+      top: 30vh;
+      left: 0%;
+      width: 100%;
+      height: 70vh;
+      background-image: url(../images/bg2.svg);
+      background-position: -50px 0;
+      background-repeat: no-repeat;
+      background-size: cover;
   }
-
 
   .phone {
     height: 45px !important;
@@ -587,15 +586,15 @@ a.whiteSmaller:hover {
   }
 
   .bg2 {
-    position: absolute;
-    top: 60vh;
-    left: 0%;
-    width: 100%;
-    height: 40vh;
-    background-image: url(../images/bg2.svg);
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: cover;
+      position: absolute;
+      top: 40vh;
+      left: 0%;
+      width: 100%;
+      height: 60vh;
+      background-image: url(../images/bg2.svg);
+      background-position: -50px 0;
+      background-repeat: no-repeat;
+      background-size: cover;
   }
 
   .btn-contact {
