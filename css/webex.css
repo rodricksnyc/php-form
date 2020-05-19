@@ -620,7 +620,10 @@ a.whiteSmaller:hover {
   .showIpad {
     display: none;
   }
+
 }
+
+
 
 
 .carousel-inner {
@@ -906,6 +909,7 @@ top:49% !important;
     display: block;
     padding-bottom: 10%;
   }
+
 
   .phone {
     height: 45px !important;
@@ -1264,4 +1268,47 @@ top:49% !important;
     font-size:11px;
   }
 
+}
+
+@media (min-width:1501px) {
+  .hideMiddleSize{
+    display:none;
+  }
+}
+
+@media (max-width:1200px) {
+  .static {
+    position:absolute;
+    right:0;
+    top:10%;
+    max-width:500px !important;
+  }
+}
+
+@media (min-width:1201px) and (max-width:1500px) {
+  .static {
+    position:absolute;
+    right:0;
+    top:10%;
+    max-width:600px !important;
+  }
+}
+
+
+
+
+
+@media (min-width:1025px) and (max-width:1500px) {
+  .middleSize {
+    display:none;
+  }
+  .hideMiddleSize {
+    display:block
+  }
+}
+
+@media (max-width:1024px) {
+  .hideMiddleSize{
+    display:none;
+  }
 }
