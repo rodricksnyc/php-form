@@ -998,8 +998,24 @@ top:49% !important;
     max-width: none;
         margin-left: -1em;
   }
+  .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: auto !important;
+    min-height: 49em !important;
+}
 
 
+
+}
+
+
+
+@media (width:1024px) and (height:768px) {
+footer {
+  position:relative !important
+}
 
 }
 
