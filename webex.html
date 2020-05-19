@@ -309,6 +309,21 @@
 
 
           <script>
+          if ($(document).height() > 769) {
+
+            $('footer').css('position', 'absolute')
+
+          }
+
+          if ($(document).height() <= 768) {
+
+            $('footer').css('position', 'relative')
+
+          }
+
+
+
+
           $('#myCarousel').carousel({
             interval:   0
           });
@@ -345,7 +360,7 @@
 
 
           $('.carousel').carousel({
-            interval: false,
+            interval: false
           })
 
 
@@ -396,17 +411,6 @@
 
           }
 
-          if ($(document).height() > 768) {
-
-            $('footer').css('position', 'absolute')
-
-          }
-
-          if ($(document).height() =< 768) {
-
-            $('footer').css('position', 'relative')
-
-          }
 
 
 
