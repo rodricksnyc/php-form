@@ -397,6 +397,39 @@ a.whiteSmaller:hover {
   }
 }
 
+
+@media (width:1024px) and (height:1366px) {
+  .bg {
+    position: absolute;
+    top: 48vh;
+    left: 4%;
+    width: 96%;
+    height: 52vh;
+    background-image: url(../images/new-background.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .bg2 {
+    position: absolute;
+    top: 60vh;
+    left: 0%;
+    width: 100%;
+    height: 40vh;
+    background-image: url(../images/bg2.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .horizontal {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: none;
+        margin-left: -1em;
+  }
+}
+
 @media (max-width:767px) {
   .mobile {
     display: block;
@@ -598,6 +631,11 @@ a.whiteSmaller:hover {
 #meetingModal .modal-open {
   padding-right:0px !important
 }
+
+.showIpad {
+  display: none;
+}
+
 
 .carousel-inner {
   position: relative;
@@ -878,6 +916,16 @@ top:49% !important;
 }
 
 @media (max-width:1024px) {
+  .showIpad {
+    display: block;
+    padding-bottom: 10%;
+  }
+
+  .phone {
+    height: 45px !important;
+    margin: 0em .5em;
+}
+
   .item img {
     max-width: 100%;
     /* margin-left: 0%; */
@@ -917,6 +965,33 @@ top:49% !important;
     right: 27px;
 
   }
+
+  .horizontal.center {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: none;
+    margin-left:-1em
+  }
+
+
+}
+@media (max-width:991px) and (min-width:768px){
+.whiteTitle, .navy {
+  font-size: 60px;
+
+}
+
+.pt10 {
+    padding-top: 10% !important;
+}
+.horizontal.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: none;
+}
+
 }
 
 @media (max-width:767px) {
