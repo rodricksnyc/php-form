@@ -1376,6 +1376,22 @@ footer {
 }
 
 
+@media (width:834px) and (height:1112px) {
+  .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: auto !important;
+    height: 44em !important;
+
+}
+}
+
+@media (width:1112px) and (height:834px) {
+footer {
+  position:relative;
+}
+}
 
 
 
