@@ -1357,7 +1357,7 @@ footer {
 
 
 
-@media (min-width:1025px) and (max-width:1500px) {
+@media (min-width:1001px) and (max-width:1500px) {
   .middleSize {
     display:none;
   }
@@ -1366,7 +1366,7 @@ footer {
   }
 }
 
-@media (max-width:1024px) {
+@media (max-width:1000px) {
   .hideMiddleSize{
     display:none;
   }
