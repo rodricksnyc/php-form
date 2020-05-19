@@ -163,8 +163,7 @@ a.btn-contact{
   text-decoration: none !important;
   border-radius: 24px;
   margin: -5px -1px 8px 0px;
-  /* opacity:.4;
-  pointer-events: none !important; */
+
 }
 
 a.btn-contact:hover {
@@ -433,6 +432,17 @@ a.whiteSmaller:hover {
 
 
 @media (max-width:767px) {
+
+
+  a.btn-contact{
+    padding: 8px 12px 8px 36px;
+    background-position: 12px 50%;
+    background-size: 18px;
+    text-decoration: none !important;
+    border-radius: 24px;
+    margin: -5px -1px 8px 0px;
+
+  }
   .phone {
     height: 45px !important;
     margin: 0em .5em;
