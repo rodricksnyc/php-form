@@ -5,7 +5,6 @@ html {
 footer {
   background: #151A77;
 
-  position: absolute;
 
   padding: 12px 0px;
   background: #151A77;
@@ -368,11 +367,7 @@ a.whiteSmaller:hover {
 }
 
 @media (min-width:992px) and (max-width:1024px) {
-  footer {
-    background: #151A77;
 
-    position: relative;
-}
 
 }
 

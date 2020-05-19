@@ -424,11 +424,23 @@ display: none;
 }
 
 footer{
-  position: relative;
+
   /* background: #1a2a57; */
   padding: 12px 0px;
   background: #151A77;
   height:60px;
+}
+
+@media (min-height:769px) {
+  footer {
+    position:absolute;
+  }
+}
+
+@media (max-height:768px) {
+  footer {
+    position:relative;
+  }
 }
 
 .footer-wrapper{
