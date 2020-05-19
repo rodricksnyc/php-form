@@ -682,6 +682,9 @@ a.whiteSmaller:hover {
   /* font-weight:600; */
 }
 
+
+@media (min-width:1025px) {
+
 .item h5 {
   color: #16487D;
   font-size: 22px;
@@ -689,6 +692,17 @@ a.whiteSmaller:hover {
   margin-left: 9.7%;
   font-weight: 600;
   margin-top:1em;
+}
+
+}
+
+@media (max-width:1024px) {
+
+.item h5 {
+margin-left: 0%;
+
+}
+
 }
 
 .carousel-inner {
