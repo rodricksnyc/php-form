@@ -366,6 +366,17 @@ a.whiteSmaller:hover {
     margin-left:0px;
   }
 }
+
+@media (min-width:992px) and (max-width:1024px) {
+  footer {
+    background: #151A77;
+
+    position: relative;
+}
+
+}
+
+
 @media (min-width:768px) and (max-width:991px) {
   .bg {
     position: absolute;
@@ -395,11 +406,21 @@ a.whiteSmaller:hover {
     align-items: center;
     max-width: none;
   }
+  .phone {
+    height: 45px !important;
+    margin: 0em .5em;
+
+  }
 }
 
 
 
 @media (max-width:767px) {
+  .phone {
+    height: 45px !important;
+    margin: 0em .5em;
+
+  }
   .mobile {
     display: block;
     position:relative;
