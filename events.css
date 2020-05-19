@@ -268,19 +268,19 @@ main{
 }
 
 #myModal .modal-header {
-    padding: 15px;
-    border-bottom: 1px solid #19497b;
-    margin-left: 2em;
-    margin-right: 2em;
-    padding-bottom: 0px;
+  padding: 15px;
+  border-bottom: 1px solid #19497b;
+  margin-left: 2em;
+  margin-right: 2em;
+  padding-bottom: 0px;
 }
 #myModal .modal-header .close {
-    margin-top: -16px !important;
-    color:#19497b !important;
-    font-size: 38px !important;
-    opacity: 1 !important;
-    font-weight: 100 !important;
-    margin-right: -35px;
+  margin-top: -16px !important;
+  color:#19497b !important;
+  font-size: 38px !important;
+  opacity: 1 !important;
+  font-weight: 100 !important;
+  margin-right: -35px;
 }
 
 #myModal .modal-body {

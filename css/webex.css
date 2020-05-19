@@ -87,12 +87,12 @@ footer {
 
 
 /* #myModal p{
-  color:#19497b !important;
+color:#19497b !important;
 }
 
 
 #myModal label{
-  color:#19497b !important;
+color:#19497b !important;
 } */
 
 
@@ -164,8 +164,13 @@ a.btn-contact{
   text-decoration: none !important;
   border-radius: 24px;
   margin: -5px -1px 8px 0px;
-  opacity:.4;
-  pointer-events: none !important;
+  /* opacity:.4;
+  pointer-events: none !important; */
+}
+
+a.btn-contact:hover {
+  background: #151A77;
+  color:white;
 }
 
 
@@ -395,6 +400,19 @@ a.whiteSmaller:hover {
 @media (max-width:767px) {
   .mobile {
     display: block;
+    position:relative;
+  }
+
+  h3.title {
+    top: -12px;
+    /* left: 34%; */
+    font-size: 17px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #0E617E !important;
+    border-bottom: 4px solid #5ccbc1;
+    padding-bottom: 2px;
   }
 
   .hideMobile {
@@ -865,6 +883,7 @@ top:49% !important;
     /* margin-left: 0%; */
     box-shadow: 0px 0px 22px 1px rgba(0, 0, 0, 0.15);
     margin: 0em 0em .8em 0em;
+    /* margin-left: 10%; */
   }
 
   .tab-content {
@@ -903,67 +922,67 @@ top:49% !important;
 @media (max-width:767px) {
 
   .navy {
-        letter-spacing: 0px !important;
+    letter-spacing: 0px !important;
   }
   .whiteTitle {
     font-size: 32px;
-}
+  }
 
   #meetingModal {
     top: 0% !important;
-}
+  }
 
   .modal-content {
 
-      margin-top: -.4em !important;
+    margin-top: -.4em !important;
   }
   .item p {
     line-height: 20px !important;
     font-weight: 400 !important;
-}
+  }
 
   .glyphicon-chevron-right:after {
-      content: "\f111" !important;
-      font: 40px 'FontAwesome' !important;
-      color: #00ADE4 !important;
-      opacity: .55;
-      display:none;
-  }
-  .carousel-control.right {
-    right: -10px !important;
-}
-.right .fal.fa-angle-right {
-    position: absolute;
-    top: 0;
-    font-size: 37px;
-    right: 0;
-    color:#151A77;
-    /* color: white; */
-    opacity: .85;
-    z-index: 99;
-}
-
-
-.glyphicon-chevron-left:after {
     content: "\f111" !important;
     font: 40px 'FontAwesome' !important;
     color: #00ADE4 !important;
     opacity: .55;
     display:none;
-}
-.carousel-control.left {
-  left: -10px !important;
-}
-.left .fal.fa-angle-left {
-  position: absolute;
-  top: 0;
-  font-size: 37px;
-  left: 0;
-  color:#151A77;
-  /* color: white; */
-  opacity: .85;
-  z-index: 99;
-}
+  }
+  .carousel-control.right {
+    right: -10px !important;
+  }
+  .right .fal.fa-angle-right {
+    position: absolute;
+    top: 0;
+    font-size: 37px;
+    right: 0px;
+    color:#151A77;
+    /* color: white; */
+    opacity: .85;
+    z-index: 99;
+  }
+
+
+  .glyphicon-chevron-left:after {
+    content: "\f111" !important;
+    font: 40px 'FontAwesome' !important;
+    color: #00ADE4 !important;
+    opacity: .55;
+    display:none;
+  }
+  .carousel-control.left {
+    left: -10px !important;
+  }
+  .left .fal.fa-angle-left {
+    position: absolute;
+    top: 0;
+    font-size: 37px;
+    left: 0px;
+    color:#151A77;
+    /* color: white; */
+    opacity: .85;
+    z-index: 99;
+  }
 
   #meetingModal .modal-title {
     right: 27px;
@@ -1032,7 +1051,15 @@ top:49% !important;
   .carousel-inner {
     min-height: none;
     /* height: 57em !important; */
-    height: 48em !important;
+    height: 46em !important;
+  }
+
+  .right .fal.fa-angle-right {
+    right:-3px;
+  }
+
+  .left .fal.fa-angle-left {
+    left:-3px;
   }
 }
 
@@ -1040,30 +1067,38 @@ top:49% !important;
   .carousel-inner {
     min-height: none;
     /* height: 53em !important; */
-    height:43em !important;
+    height:40.8em !important;
   }
 }
 @media (max-width:375px) and (max-height:812px) {
   .whiteTitle {
     font-size: 30px;
-}
+  }
 }
 
 
 @media (max-width:360px) and (max-height:640px) {
   .whiteTitle {
     font-size: 28px;
-}
+  }
 }
 
 
 
 @media (max-width:325px) {
 
+  .right .fal.fa-angle-right {
+    right:3px;
+  }
+
+  .left .fal.fa-angle-left {
+    left:3px;
+  }
+
   .carousel-inner {
     min-height: none;
     /* height: 47em !important; */
-    height:38em !important;
+    height: 36em !important;
   }
   .nav-tabs>li>a {
     margin-right: 2px;
@@ -1081,13 +1116,13 @@ top:49% !important;
 
   .whiteTitle {
     font-size: 24px !important;
-}
-.btn-contact {
+  }
+  .btn-contact {
     font-size: 15px !important;
-}
-.navy {
-      letter-spacing: 0px !important;
-}
+  }
+  .navy {
+    letter-spacing: 0px !important;
+  }
 
   .img-wes-logo {
     height: 20px;
@@ -1101,10 +1136,10 @@ top:49% !important;
   .phone {
     height: 41px !important;
     margin: 0em .1em;
-}
+  }
 
-.yellow {
-  font-size:11px;
-}
+  .yellow {
+    font-size:11px;
+  }
 
 }
