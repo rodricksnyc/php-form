@@ -55,8 +55,9 @@ header {
   width: 80%;
   padding: 1em 1em 1em 2em;
   /* background: linear-gradient(90deg, rgba(8,73,126,1) 0%, rgba(18,103,142,1) 19%, rgba(25,123,153,1) 37%); */
-  min-height:45px;
-  background: #532683
+  min-height: 46px;
+      background: #532683;
+      top: -1px;
 }
 .brand {
   display: inline-block;
@@ -192,18 +193,44 @@ box-shadow: 0px 2px 8px rgba(0,0,0,0.15), 0px 0px 10px rgba(0,0,0,.1);
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     max-width: 260px;
     text-align: center;
-    min-width: 200px;
+    min-width: 240px;
+    margin: 2em 0em !important;
 }
 .btn-login {
     margin: 1em 0em;
 border-radius: 1rem;
 max-width: 260px;
 text-align: center;
-min-width: 200px;
+    min-width: 240px;
+    background-color: #532683
 
   }
+  #myModal .form-control {
+    border: auto;
+    border: 1px solid #ccc;
+}
+
+#myModal .modal-header {
+    padding: 15px;
+    /* border-bottom: 1px solid #19497b; */
+    margin-left: 2em;
+    margin-right: 2em;
+    padding-bottom: 0px;
+    border-bottom: 1px solid #e5e5e5;
+}
+#myModal h4.navy {
+
+    color: #532683;
+}
+
+  .btn-login:active, .btn-login:focus, .btn-login:hover {
+    color: #532683;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.15), 0px 0px 10px rgba(0,0,0,.1);
+}
 .blueColor{
-  color:#00467f
+  color:#00467f;
+  font-size:16px;
 }
 html{
   overflow-x: hidden;
@@ -231,6 +258,13 @@ html{
 .line {
   height:auto;
 }
+}
+
+.across{
+  margin-top:1em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 </style>
@@ -282,7 +316,7 @@ html{
 
                       <button value="Login" type="button" class="btn-login" id="button" type="button" value="Submit" onclick="if (document.getElementById('password').value == 'CAHPS20') {
                         window.location.href='cahps20-docs.html';   document.getElementById('passw').style.display='none'; }
-                        else {  alert('Invalid Password!'); password.setSelectionRange(0, password.value.length);   } ">Submit</button>
+                        else {  alert('Invalid Password!'); password.setSelectionRange(0, password.value.length);   } ">submit</button>
                     </div>
 
 
@@ -296,7 +330,7 @@ html{
                     </div>
 
 
-                        <a href="" data-toggle="modal" data-target="#myModal" tabindex="0" aria-hidden="false" aria-label="Show Contact Form" role="button" class="blueColor"><i class="fal fa-user-headset blueColor"></i> Contact support for any technical issues</a>
+                        <a href="" data-toggle="modal" data-target="#myModal" tabindex="0" aria-hidden="false" aria-label="Show Contact Form" role="button" class="blueColor across"><img src="images/support_icon.svg" class="img-responsive" width="25" height="25">&nbsp;Contact support for any technical issues</a>
 
 
 
