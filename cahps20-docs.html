@@ -243,6 +243,31 @@ a {
     margin: .3em 0em;
 
 }
+
+a {
+  position: relative;
+  display: inline-block;
+  margin-left: -.5rem;
+  padding-left: 0.5rem;
+
+}
+
+a:after {
+  content: "";
+  position: absolute;
+  left: 0.5rem;
+  top: calc(100% + 0.15rem);
+  width: 0;
+  height: 1px;
+  background-color: #06477d;
+  transition: width 0.3s ease-in-out;
+}
+
+a:hover:after,
+a:focus:after {
+  width: calc(100% - 0.5rem);
+}
+
 a:first-child{
   margin-top:1em
 }
