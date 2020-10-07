@@ -235,7 +235,7 @@ html{
 }
 }
 
-a {
+.link {
     color: #06477d;
     text-decoration: none;
     font-size: 16px;
@@ -244,7 +244,7 @@ a {
 
 }
 
-a {
+.link {
   position: relative;
   display: inline-block;
   margin-left: -.5rem;
@@ -252,7 +252,7 @@ a {
 
 }
 
-a:after {
+.link:after {
   content: "";
   position: absolute;
   left: 0.5rem;
@@ -263,12 +263,12 @@ a:after {
   transition: width 0.3s ease-in-out;
 }
 
-a:hover:after,
-a:focus:after {
+.link:hover:after,
+.link:focus:after {
   width: calc(100% - 0.5rem);
 }
 
-a:first-child{
+.link:first-child{
   margin-top:1em
 }
 
@@ -280,6 +280,13 @@ a i {
     a {
       margin-left:3em
     }
+}
+
+.red{
+  color: red;
+  font-size: 18px;
+  margin-right: 5px;
+
 }
 
 </style>
@@ -319,12 +326,12 @@ a i {
 
                 <p>Advancing Methods of Implementing and Evaluating Patient Experience Improvement Using CAHPS Surveys</p>
 
-                <a href="images/1_Agenda_10-07-2020.pdf" target="_blank"><i class="fal fa-file-pdf"></i> Agenda</a>
-                <a href="images/2_Participant Tip Sheet_10-07-2020.pdf" target="_blank"><i class="fal fa-file-pdf"></i> Participant Tip Sheet</a>
-                <a href="images/3a_Morning Panel Slides_10-07-2020.pdf" target="_blank"><i class="fal fa-file-pdf"></i> Morning Panel Slides</a>
-                <a href="images/3b_Afternoon Panel Slides_10-07-2020.pdf" target="_blank"><i class="fal fa-file-pdf"></i> Afternoon Panel Slides</a>
-                <a href="images/4_Speaker Bio Document_10-07-2020.pdf" target="_blank"><i class="fal fa-file-pdf"></i> Speaker Bio Document</a>
-                <a href="images/5_Participant List_10-07-2020.pdf" target="_blank"><i class="fal fa-file-pdf"></i> Participant List</a>
+                <a href="images/1_Agenda_10-07-2020.pdf" target="_blank"><i class="fal fa-file-pdf red"></i> <span class="link">Agenda</span></a>
+                <a href="images/2_Participant Tip Sheet_10-07-2020.pdf" target="_blank"><i class="fal fa-file-pdf red"></i> <span class="link">Participant Tip Sheet</span></a>
+                <a href="images/3a_Morning Panel Slides_10-07-2020.pdf" target="_blank"><i class="fal fa-file-pdf red"></i> <span class="link">Morning Panel Slides</span></a>
+                <a href="images/3b_Afternoon Panel Slides_10-07-2020.pdf" target="_blank"><i class="fal fa-file-pdf red"></i> <span class="link">Afternoon Panel Slides</span></a>
+                <a href="images/4_Speaker Bio Document_10-07-2020.pdf" target="_blank"><i class="fal fa-file-pdf red"></i> <span class="link">Speaker Bio Document</span></a>
+                <a href="images/5_Participant List_10-07-2020.pdf" target="_blank"><i class="fal fa-file-pdf red"></i> <span class="link">Participant List</span></a>
 
 
 
