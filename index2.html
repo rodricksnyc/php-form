@@ -4,7 +4,7 @@
   <meta charset="UTF-8" http-equiv="X-UA-Compatible" content="IE=Edge">
   <link rel="shortcut icon" href="favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-    <title>CAHPS 2020</title>
+    <title>SOPS 2021</title>
   <link rel="stylesheet" href="events.css">
   <link rel="stylesheet" href="vendorlibs/animate.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
@@ -20,7 +20,7 @@ header {
   /* padding: 1em 1em 1em 2em; */
   height: auto;
   min-height: 46px;
-  background: #50ac48;
+  background: #a7a7a7;
 }
 @media (min-width: 48em){
   .navbar {
@@ -66,7 +66,7 @@ header {
 }
 .start:after {
   width: 110%;
-  background: #532683;
+  background: #1caece;
   position: absolute;
   height: 100%;
   content: ' ';
@@ -120,11 +120,14 @@ footer {
 
 .line {
   height:80vh;
-  border-right:1px solid #50ac48
+  border-right:1px solid #1caece
 }
 
 .logo{
-  padding: 1em
+max-width: 70%;
+margin-bottom: 1em;
+padding: 0;
+margin-left: -2em;
 }
 
 @media (min-width: 1200px) {
@@ -140,15 +143,18 @@ h1{
 }
 
 h3 {
-  color:#50ac48;
+  color:#007abd;
 margin-top: 0em;
+font-weight:700;
+    max-width: 92%;
 }
 
 .vertical{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding:7em 2em
+  padding:3em 2em;
+      margin-left: 1em;
 }
 p, body {
   color:#343a40
@@ -202,7 +208,7 @@ border-radius: 1rem;
 max-width: 260px;
 text-align: center;
     min-width: 240px;
-    background-color: #532683;
+    background-color: #007abd;
     box-shadow: 0px 2px 8px rgba(0,0,0,0.15), 0px 0px 10px rgba(0,0,0,.1);
 
   }
@@ -234,7 +240,7 @@ label {
 }
 
   .btn-login:active, .btn-login:focus, .btn-login:hover {
-    color: #532683;
+    color: #007abd;
     background-color: #ffffff;
     box-shadow: 0px 2px 8px rgba(0,0,0,0.15), 0px 0px 10px rgba(0,0,0,.1);
 }
@@ -253,8 +259,11 @@ html{
 }
 
 @media (max-width:991px){
-  .logo{
-    padding:1em 3em
+  .logo {
+      max-width: 90%;
+      margin-bottom: 1em;
+      padding: 0;
+      margin-left: -2em;
   }
 }
 
@@ -276,6 +285,49 @@ html{
   justify-content: flex-start;
   align-items: center;
 }
+
+.blueColor{
+  color:#007abd !important
+}
+
+.mb-0{
+  margin-bottom:0em
+}
+
+.link {
+    color: #007abd;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+
+
+}
+
+.link {
+  position: relative;
+  display: inline-block;
+  margin-left: -.5rem;
+  padding-left: 0.5rem;
+
+}
+
+.link:after {
+  content: "";
+  position: absolute;
+  left: 0.5rem;
+  top: calc(100% + 0.15rem);
+  width: 0;
+  height: 1px;
+  background-color: #007abd;
+  transition: width 0.3s ease-in-out;
+}
+
+.link:hover:after,
+.link:focus:after {
+  width: calc(100% - 0.5rem);
+}
+
+
 
 </style>
 
@@ -301,18 +353,20 @@ html{
 
       <div class="row">
 
-        <div class="col-lg-2 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-5 col-xs-12 line">
+        <div class="col-lg-2 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-3 col-xs-12 line">
 
-          <img src="images/c-logo.svg" class="img-responsive logo"  alt="Consumer Assessment of Healthcare Providers and Systems (CAHPS) logo">
+
 
           <div class="greenline"></div>
         </div>
 
-              <div class="col-lg-9 col-md-8 col-sm-7 col-xs-12">
+              <div class="col-lg-9 col-md-8 col-sm-9 col-xs-12">
                 <div class="vertical">
-                <h1>CAHPS Research Meeting</h1>
-                <h3>October 7, 2020</h3>
-                <p>Enter password to download slides and other materials which will be available for download through <span class="strong">October 15, 2020</span>.</p>
+                <img src="images/header.png" class="img-responsive logo"  alt="Surveys on Patient Safety Culture logo">
+                <h3>How To Use the AHRQ SOPS&reg; Ambulatory Surgery Center Survey To Improve Patient Safety</h3>
+                <h4 class="mb-0">Thursday, January 21, 2021</h4>
+                <h4>2-3 p.m. ET</h4>
+                <p>Enter password to download slides and other materials which will be available for download through <span class="strong">January 25, 2021</span>. In February, a replay of the webcast and the slides will be available on the AHRQ web site at <a href="https://www.ahrq.gov/sops/index.html" target="_blank"><span class="link">www.ahrq.gov/SOPS</span></a>.</p>
 
 
 
@@ -324,7 +378,7 @@ html{
 
                       <input maxlength="12" size="8" class="auth-control access" placeholder="password" type="password" id="password" onkeydown="if (event.keyCode == 13) document.getElementById('button').click()" />
 
-                      <button value="Login" type="button" class="btn-login" id="button" type="button" value="Submit" onclick="if (document.getElementById('password').value == 'CAHPS20') {
+                      <button value="Login" type="button" class="btn-login" id="button" type="button" value="Submit" onclick="if (document.getElementById('password').value == 'SOPSASC') {
                         window.location.href='cahps20-docs.html';   document.getElementById('passw').style.display='none'; }
                         else {  alert('Invalid Password!'); password.setSelectionRange(0, password.value.length);   } ">submit</button>
                     </div>
@@ -340,7 +394,7 @@ html{
                     </div>
 
 
-                        <a href="" data-toggle="modal" data-target="#myModal" tabindex="0" aria-hidden="false" aria-label="Show Contact Form" role="button" class="blueColor across"><img src="images/support_icon.svg" class="img-responsive" width="25" height="25" style="margin-right:5px">&nbsp;Contact support for any technical issues</a>
+              <a href="" data-toggle="modal" data-target="#myModal" tabindex="0" aria-hidden="false" aria-label="Show Contact Form" role="button" class="blueColor across"><img src="images/support_icon.svg" class="img-responsive" width="25" height="25" style="margin-right:5px">&nbsp;Contact support for any technical issues</a>
 
 
 

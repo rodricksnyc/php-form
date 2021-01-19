@@ -21,6 +21,6 @@ $validator->field('message')->maxLength(6000);
 
 
 
-$pp->sendEmailTo('CAHPS1@westat.com'); // ← Your email here
+$pp->sendEmailTo('DatabasesOnSafetyCulture@westat.com'); // ← Your email here
 
 echo $pp->process($_POST);
