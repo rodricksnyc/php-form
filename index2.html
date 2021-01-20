@@ -153,8 +153,9 @@ font-weight:700;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding:3em 2em;
-      margin-left: 1em;
+  padding: 2em 2em;
+  margin-left: 1em;
+
 }
 p, body {
   color:#404040;
@@ -327,6 +328,10 @@ html{
   width: calc(100% - 0.5rem);
 }
 
+main {
+    min-height: calc(95vh - 60px);
+    position: relative;
+}
 
 
 </style>
@@ -378,7 +383,7 @@ html{
 
                       <input maxlength="12" size="8" class="auth-control access" placeholder="password" type="password" id="password" onkeydown="if (event.keyCode == 13) document.getElementById('button').click()" />
 
-                      <button value="Login" type="button" class="btn-login" id="button" type="button" value="Submit" onclick="if (document.getElementById('password').value == 'SOPSASC') {
+                      <button value="Login" type="button" class="btn-login" id="button" type="button" value="Submit" onclick="if (document.getElementById('password').value == 'SOPS2021!') {
                         window.location.href='sops-2021-slides.html';   document.getElementById('passw').style.display='none'; }
                         else {  alert('Invalid Password!'); password.setSelectionRange(0, password.value.length);   } ">submit</button>
                     </div>
